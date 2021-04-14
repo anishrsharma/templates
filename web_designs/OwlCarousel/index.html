@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owl Carousel</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+</head>
+
+<body>
+    <div class="slider-main owl-carousel">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+        <div class="box">box5</div>
+        <div class="box">box6</div>
+        <div class="box">box7</div>
+        <div class="box">box8</div>
+    </div>
+
+    <script>
+        $('.slider-main').owlCarousel({
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: true,
+            // margin:60,
+            // nav:true,
+            // stagePadding:2,
+            center: true,
+            touchDrag: true,
+            mouseDrag: true,
+            // slideTransition:linear,
+            smartSpeed: 800,
+            animateIn: 'linear',
+            animateOut: 'linear',
+            // dots:true,
+            // pagination:false,
+            // navigation:true,
+            responsive: {
+                0: {
+                    items: 1,
+                    // center: true
+                },
+                500: {
+                    items: 2,
+                },
+                800: {
+                    items: 3
+                },
+                1100: {
+                    items: 4
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

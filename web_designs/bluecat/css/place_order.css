@@ -1,0 +1,267 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*---------------------------------------- */
+
+/*-----------main--------------- */
+
+/*---------------------------------------- */
+
+.order-main {
+    width: 70%;
+    /* border: 1px solid red; */
+    margin: 50px auto;
+    /* height: 80vh; */
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+}
+
+.order-heading {
+    background-color: rgb(255, 165, 0);
+    padding: 8px 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    /* left: 0; */
+}
+
+.order-heading h3 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.place-order-workingarea {
+    margin: 50px 0;
+    display: flex;
+    padding: 0 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ------------------*/
+
+.dots {
+    width: 100px;
+    display: flex;
+    /* border: 1px solid red; */
+    /* position: absolute; */
+    /* top: 0; */
+    /* width: 100%; */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+}
+
+.dots span {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    margin: 10px 10px;
+    width: 10px;
+    height: 10px;
+    /* background-color: ; */
+    /* background-color: rgb(255, 165, 0); */
+    /* box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75); */
+}
+
+.dots .order-span1 {
+    background-color: rgb(255, 165, 0);
+}
+
+@media(max-width:550px) {
+    .order-main {
+        width: 90%;
+    }
+}
+
+/*---------------------------------------- */
+
+/*-----------place_order1.php--------------- */
+
+/*---------------------------------------- */
+
+.place-order1-main {
+    /* border: 1px solid red; */
+    /* background-color: red; */
+    display: flex;
+    /* flex-wrap: ; */
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: start; */
+    /* align-items: center; */
+    /* justify-content: left; */
+}
+
+.place-order1-main h3 {
+    margin: 20px 0;
+    color: rgb(255, 165, 0);
+    text-align: center;
+}
+
+.place-order1-main .box {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 20px;
+    /* margin: 10px 0; */
+}
+
+.place-order1-main .box p {
+    color: #000000;
+    /* align-items: ; */
+    justify-content: left;
+    font-size: 13px;
+    /* padding: 0; */
+    position: absolute;
+    left: 20px;
+    top: 0px;
+    color: rgb(255, 165, 0);
+    font-weight: bold;
+    /* opacity: 0.9; */
+    /* background-color: rgb(255, 165, 0); */
+}
+
+.place-order1-main .box input, textarea {
+    /* text-align: center; */
+    padding: 8px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+    border: none;
+    border-radius: 2px;
+    font-size: 14px;
+    width: 300px;
+}
+
+.place-order1-main .input-radio {
+    margin: 20px 0;
+    /* border: 1px solid blue; */
+    display: flex;
+}
+
+.place-order1-main .input-radio label {
+    font-size: 13px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0, 0.5);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.place-order1-main .input-radio label input {
+    margin: 0 6px;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+}
+
+/*---------------------------*/
+
+.place-order-workingarea button {
+    width: 120px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    margin: 13px 0;
+    cursor: pointer;
+    padding: 10px;
+    color: #000000;
+    background-color: rgb(255, 165, 0);
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.place-order-workingarea button:hover {
+    opacity: 0.8;
+}
+
+.place-order-workingarea button i {
+    padding: 0;
+    margin: 0 0 0 5px;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+}
+
+@media(max-width:550px) {
+    .place-order1-main .box input, textarea {
+        width: 250px;
+    }
+}
+
+/*---------------------------------------- */
+
+/*-----------place_order1.php--------------- */
+
+/*---------------------------------------- */
+
+.place-order2-main {
+    /* border: 1px double red; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* justify-content: left; */
+    padding: 10px;
+}
+
+
+.place-order2-main h3 {
+    /* font-size: 14px; */
+    margin: 20px 0;
+    color:rgb(255, 165, 0);
+}
+
+.place-order2-main img {
+    width: 50%;
+}
+
+.place-order2-main p {
+    font-size: 14px;
+    color: #000000;
+}
+
+.place-order2-main button {
+    width: 120px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    margin: 13px 0;
+    cursor: pointer;
+    padding: 10px;
+    color: #000000;
+    background-color: rgb(255, 165, 0);
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.place-order2-main button:hover {
+    opacity: 0.8;
+}
+
+@media(max-width:550px) {
+    .place-order2-main img {
+        /* width: 90%; */
+        width: 80%;
+    }
+}

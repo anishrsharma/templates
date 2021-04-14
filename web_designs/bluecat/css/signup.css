@@ -1,0 +1,178 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* -------------------*/
+
+
+/* -------------------*/
+
+.signup-main {
+    height: 80vh;
+    width: 70%;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -1px 4px 8px 0px rgba(0, 0, 0, 0.49);
+    -webkit-box-shadow: -1px 4px 8px 0px rgba(0, 0, 0, 0.49);
+    -moz-box-shadow: -1px 4px 8px 0px rgba(0, 0, 0, 0.49);
+    position: relative;
+}
+
+.signup-main .msg {
+    /* border: 1px solid blue; */
+    position: absolute;
+    top: 20px;
+    font-size: 13px;
+    /* font-weight: bold; */
+    color: transparent;
+    animation-name: msg-animation;
+    animation-duration: 7s;
+    transition: all;
+    /* animation-delay: 2s; */
+    animation-iteration-count: 1;
+}
+
+@keyframes msg-animation {
+    0% {
+        color: red;
+        display: block;
+    }
+    80% {
+        color: red;
+        display: block;
+    }
+    100% {
+        color: transparent;
+        display: none;
+    }
+}
+
+.signup-main form, .form-create-admin {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* width: 70%; */
+}
+
+
+
+.input-name, .input-email, .input-pass1, .input-pass2 {
+    padding: 0;
+    margin: 8px 0;
+    border-radius: 2px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-rememberme{
+    margin: 10px 0 30px 0;
+    /* border: 1px solid red; */
+    width: 149px;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    position: relative;
+}
+
+.input-rememberme i{
+    position: absolute;
+    top: 0;
+}
+
+.input-rememberme input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+
+
+.signup-main form i, .form-create-admin i{
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid red; */
+    margin: 0 10px;
+    color: rgb(255, 165, 0);
+}
+
+.signup-main form h3 , .form-create-admin h3{
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    color: rgb(255, 165, 0);
+}
+
+.signup-main form input , .form-create-admin input{
+    border: 1px solid transparent;
+    padding: 8px;
+    font-size: 13px;
+    width: 250px;
+    /* text-align: center; */
+    color: #000000;
+    /* box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75); */
+}
+
+.signup-main form button , .form-create-admin button{
+    width: 120px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    margin: 13px 0;
+    cursor: pointer;
+    padding: 10px;
+    color: #000000;
+    background-color: rgb(255, 165, 0);
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-main form button i , .form-create-admin button i{
+    /* font-size: 17px; */
+    padding: 0;
+    margin: 0 0 0 5px;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+}
+
+.signup-main form button:hover {
+    opacity: 0.8;
+}
+
+.form-create-admin button:hover{
+    opacity: 0.8;
+}
+
+@media(max-width:480px) {
+    .signup-main {
+        width: 90%;
+    }
+    .signup-main form input {
+        /* border: 1px solid transparent; */
+        /* padding: 8px; */
+        /* font-size: 13px; */
+        /* margin: 8px 0; */
+        width: 220px;
+        /* text-align: center; */
+        /* color: #000000; */
+        /* border-radius: 2px; */
+        /* box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75); */
+        /* -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75); */
+        /* -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75); */
+    }
+}

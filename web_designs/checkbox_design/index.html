@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="jquery.js"></script>
+</head>
+
+<body>
+
+
+    <div class="container-main">
+        check box
+        <div class="check-box">
+            <div class="ball">
+            </div>
+
+            <input type="checkbox" name="" id="">
+
+        </div>
+    </div>
+
+
+    <script>
+
+        $(document).ready(function () {
+            $('.check-box').click(function () {
+                $('.ball').toggleClass('ball-x');
+                $('.check-box').toggleClass('check-box-x');
+
+            })
+        });
+
+    </script>
+
+
+
+</body>
+
+</html>

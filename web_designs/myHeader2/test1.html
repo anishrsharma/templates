@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>test</title>
+	<link rel="stylesheet" href="style.css">
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> -->
+	<!-- <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">  -->
+	<!-- <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">  -->
+	<!-- <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">  -->
+	<!-- <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">  -->
+	<!-- <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet"> -->
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500&display=swap" rel="stylesheet">
+	<script src="jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+	<section class="container-main">
+		<div class="container1">
+			<div class="container2">
+				<nav class="container-nav">
+
+					<label for="">wolves</label>
+
+
+					<a href="#" class="fa fa-bars" onclick="myFunction()"></a>
+
+
+					<ul id="ul">
+						<li><a href="#">home</a></li>
+						<li><a href="#">about</a></li>
+						<li><a href="#">services</a></li>
+						<li><a href="#">contact</a></li>
+					</ul>
+				</nav>
+
+				<div class="container3">
+					<h2>SAMPLE HEADING</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+						labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+						laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+						voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+						non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<script>
+		// $(document).ready(function () {
+		// 	$('.fa').click(function () {
+		// 		$('#ul').toggleClass('y');
+		// 	});
+		// });
+
+
+		let clicked = false;
+		
+		myFunction = () => {
+			if (clicked) {
+				document.querySelector('ul').style.left = '-100%';
+			} else {
+				document.querySelector('ul').style.left = '0%';
+			}
+			clicked = !clicked;
+		}
+	</script>
+
+
+</body>
+
+</html>

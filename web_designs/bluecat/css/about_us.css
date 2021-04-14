@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.about-main {
+    /* text-transform: uppercase; */
+    /* border: 2px solid #9896f1; */
+    width: 70%;
+    margin: 50px auto;
+    padding: 20px;
+    height: 80vh;
+    box-shadow: -1px 4px 8px 0px rgba(0, 0, 0, 0.49);
+    -webkit-box-shadow: -1px 4px 8px 0px rgba(0, 0, 0, 0.49);
+    -moz-box-shadow: -1px 4px 8px 0px rgba(0, 0, 0, 0.49);
+}
+
+.about-main h3 {
+    text-transform: uppercase;
+    color: rgb(255, 165, 0);
+}
+
+.about-main p {
+    font-size: 14px;
+    color: #000000;
+    text-align: left;
+}
+.about-main i{
+    color: #000000;
+    font-size: 14px;
+}
